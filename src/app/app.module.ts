@@ -88,8 +88,7 @@ const appRoutes : Routes = [
     NeighborhoodComponent,
     WaterActivitiesComponent,
     OutdoorActivitiesComponent,
-    HomeComponent,
-    RoutableComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,

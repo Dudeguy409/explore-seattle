@@ -6,6 +6,11 @@ import { RoutableComponent } from '../routable/routable.component';
   selector: 'app-hiking',
   templateUrl: './hiking.component.html'
 })
-export class HikingComponent extends RoutableComponent {
+export class HikingComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }
