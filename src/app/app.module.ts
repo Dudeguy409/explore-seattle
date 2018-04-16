@@ -29,7 +29,7 @@ import { NeighborhoodComponent } from './components/neighborhood/neighborhood.co
 import { WaterActivitiesComponent } from './components/water-activities/water-activities.component';
 import { OutdoorActivitiesComponent } from './components/outdoor-activities/outdoor-activities.component';
 import { HomeComponent } from './components/home/home.component';
-import { RoutableComponent } from './components/routable/routable.component';
+import {SubMenuTogglerService} from './services/sub-menu-toggler.service';
 
 const appRoutes : Routes = [
 {path:"",component:HomeComponent},
@@ -94,7 +94,7 @@ const appRoutes : Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [SubMenuTogglerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
