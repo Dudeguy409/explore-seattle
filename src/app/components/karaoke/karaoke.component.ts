@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-karaoke',
-  templateUrl: './karaoke.component.html',
-  styleUrls: ['./karaoke.component.css']
+  templateUrl: './karaoke.component.html'
 })
 export class KaraokeComponent implements OnInit {
 

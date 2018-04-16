@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sugar-bomb',
-  templateUrl: './sugar-bomb.component.html',
-  styleUrls: ['./sugar-bomb.component.css']
+  templateUrl: './sugar-bomb.component.html'
 })
 export class SugarBombComponent implements OnInit {
 

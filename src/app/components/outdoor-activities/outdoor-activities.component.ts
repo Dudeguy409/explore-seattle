@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-outdoor-activities',
-  templateUrl: './outdoor-activities.component.html',
-  styleUrls: ['./outdoor-activities.component.css']
+  templateUrl: './outdoor-activities.component.html'
 })
 export class OutdoorActivitiesComponent implements OnInit {
 

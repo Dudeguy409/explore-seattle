@@ -1,0 +1,17 @@
+body {background-color: black;}
+
+* {
+    color:  white;
+ }
+
+
+ h1.a {
+    color:  green !important;
+ }
+
+
+ h1.a {
+    font-family:courier;
+ }
+
+

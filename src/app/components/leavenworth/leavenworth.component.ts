@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-leavenworth',
-  templateUrl: './leavenworth.component.html',
-  styleUrls: ['./leavenworth.component.css']
+  templateUrl: './leavenworth.component.html'
 })
 export class LeavenworthComponent implements OnInit {
 

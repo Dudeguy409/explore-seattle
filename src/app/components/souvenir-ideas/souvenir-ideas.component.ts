@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-souvenir-ideas',
-  templateUrl: './souvenir-ideas.component.html',
-  styleUrls: ['./souvenir-ideas.component.css']
+  templateUrl: './souvenir-ideas.component.html'
 })
 export class SouvenirIdeasComponent implements OnInit {
 

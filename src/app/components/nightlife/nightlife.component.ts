@@ -1,15 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { RoutableComponent } from '../routable/routable.component';
+
 
 @Component({
   selector: 'app-nightlife',
-  templateUrl: './nightlife.component.html',
-  styleUrls: ['./nightlife.component.css']
+  templateUrl: './nightlife.component.html'
 })
-export class NightlifeComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class NightlifeComponent extends RoutableComponent{
 
 }

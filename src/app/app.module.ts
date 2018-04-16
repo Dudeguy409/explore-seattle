@@ -29,6 +29,7 @@ import { NeighborhoodComponent } from './components/neighborhood/neighborhood.co
 import { WaterActivitiesComponent } from './components/water-activities/water-activities.component';
 import { OutdoorActivitiesComponent } from './components/outdoor-activities/outdoor-activities.component';
 import { HomeComponent } from './components/home/home.component';
+import { RoutableComponent } from './components/routable/routable.component';
 
 const appRoutes : Routes = [
 {path:"",component:HomeComponent},
@@ -87,7 +88,8 @@ const appRoutes : Routes = [
     NeighborhoodComponent,
     WaterActivitiesComponent,
     OutdoorActivitiesComponent,
-    HomeComponent
+    HomeComponent,
+    RoutableComponent
   ],
   imports: [
     BrowserModule,
