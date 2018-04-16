@@ -1,20 +1,86 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
+<h1>
+  <a routerLink="/">Explore Seattle</a>
+</h1>
+<h3>The grass is always greener in Seattle!</h3>
 <ul>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+    <a routerLink="/">Home</a>
   </li>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+    <a routerLink="/first_trip_top_tips">Top Things To Do On Your First Trip</a>
   </li>
   <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+    <a routerLink="/city_sights">City Sights</a>
+  </li>
+  <li>
+    <a routerLink="/nightlife">Nightlife</a>
+    <ul>
+      <li>
+        <a routerLink="/nightlife/sugar_bombs">Sugar Bombs</a>
+      </li>
+      <li>
+        <a routerLink="/nightlife/german_beer">German Beer and Food</a>
+      </li>
+      <li>
+        <a routerLink="/nightlife/karaoke">Karaoke</a>
+      </li>
+      <li>
+        <a routerLink="/nightlife/craft_breweries">Craft Breweries</a>
+      </li>
+      <li>
+        <a routerLink="/nightlife/craft_coctails">Craft Cocktails</a>
+      </li>
+      <li>
+        <a routerLink="/nightlife/irish_pubs">Irish Pubs &amp; Co</a>
+      </li>
+      <li>
+        <a routerLink="/nightlife/neighborhoods">Popular Neighborhoods</a>
+      </li>
+      <li>
+        <a routerLink="/nightlife/games_and_barcades">Games &amp; Barcades </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a routerLink="/outdoor_activities">Outdoor Activities</a>
+    <ul>
+      <li>
+        <a routerLink="/outdoor_activities/water_activities">Water Activities</a>
+      </li>
+      <li>
+        <a routerLink="/outdoor_activities/hiking">Hiking</a>
+      </li>
+      <li>
+        <a routerLink="/outdoor_activities/city_parks">City Parks</a>
+      </li>
+      <li>
+        <a routerLink="/outdoor_activities/skiing">Skiing</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a routerLink="/city_from_above">See the City from Above</a>
+  </li>
+  <li>
+    <a routerLink="/woodinville_wine_tasting">Wine Tasting in Woodinville</a>
+  </li>
+  <li>
+    <a routerLink="/leavenworth">Leavenworth : A German Village</a>
+  </li>
+  <li>
+    <a routerLink="/seasonal_activities">Seasonal Activities</a>
+  </li>
+  <li>
+    <a routerLink="/restaurants">Restaurants</a>
+  </li>
+  <li>
+    <a routerLink="/museums">Museums</a>
+  </li>
+  <li>
+    <a routerLink="/souvenir_ideas">Souvenir Ideas</a>
+  </li>
+  <li>
+    <a routerLink="/about_the_author">About The Author</a>
   </li>
 </ul>
-
+<router-outlet></router-outlet>
