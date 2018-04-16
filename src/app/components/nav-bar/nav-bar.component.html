@@ -1,0 +1,72 @@
+<ul>
+  <li>
+    <a routerLink="/first_trip_top_tips">Top Things To Do On Your First Trip</a>
+  </li>
+  <li>
+    <a routerLink="/city_sights">City Sights</a>
+  </li>
+  <li>
+    <a routerLink="/nightlife">Nightlife</a>
+    <ul *ngIf="isNightlife">
+      <li>
+        <a routerLink="/nightlife/sugar_bombs">Sugar Bombs</a>
+      </li>
+      <li>
+        <a routerLink="/nightlife/german_beer">German Beer and Food</a>
+      </li>
+      <li>
+        <a routerLink="/nightlife/karaoke">Karaoke</a>
+      </li>
+      <li>
+        <a routerLink="/nightlife/craft_breweries">Craft Breweries</a>
+      </li>
+      <li>
+        <a routerLink="/nightlife/craft_coctails">Craft Cocktails</a>
+      </li>
+      <li>
+        <a routerLink="/nightlife/irish_pubs">Irish Pubs &amp; Co</a>
+      </li>
+      <li>
+        <a routerLink="/nightlife/neighborhoods">Popular Neighborhoods</a>
+      </li>
+      <li>
+        <a routerLink="/nightlife/games_and_barcades">Games &amp; Barcades </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a routerLink="/outdoor_activities">Outdoor Activities</a>
+    <ul *ngIf="isOutdoors">
+      <li>
+        <a routerLink="/outdoor_activities/water_activities">Water Activities</a>
+      </li>
+      <li>
+        <a routerLink="/outdoor_activities/hiking">Hiking</a>
+      </li>
+      <li>
+        <a routerLink="/outdoor_activities/city_parks">City Parks</a>
+      </li>
+      <li>
+        <a routerLink="/outdoor_activities/skiing">Skiing</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a routerLink="/city_from_above">See the City from Above</a>
+  </li>
+  <li>
+    <a routerLink="/woodinville_wine_tasting">Wine Tasting in Woodinville</a>
+  </li>
+  <li>
+    <a routerLink="/leavenworth">Leavenworth : A German Village</a>
+  </li>
+  <li>
+    <a routerLink="/seasonal_activities">Seasonal Activities</a>
+  </li>
+  <li>
+    <a routerLink="/restaurants">Restaurants</a>
+  </li>
+  <li>
+    <a routerLink="/museums">Museums</a>
+  </li>
+</ul>

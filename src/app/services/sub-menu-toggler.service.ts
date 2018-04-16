@@ -2,7 +2,6 @@ import { Injectable, EventEmitter } from '@angular/core';
 
 @Injectable()
 export class SubMenuTogglerService {
-
   changeNightlife: EventEmitter<boolean> = new EventEmitter();
   changeOutdoors: EventEmitter<boolean> = new EventEmitter();
 
@@ -13,5 +12,4 @@ export class SubMenuTogglerService {
   setOutdoors(val: boolean) {
     this.changeOutdoors.emit(val);
   }
-
 }

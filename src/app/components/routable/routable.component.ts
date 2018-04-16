@@ -5,12 +5,10 @@ import {SubMenuTogglerService} from '../../services/sub-menu-toggler.service';
 
 export class RoutableComponent implements OnInit {
   router: Router;
-  show: boolean;
   subMenuToggleService:SubMenuTogglerService;
 
   constructor(private _router: Router, private submenuservice:SubMenuTogglerService) {
     this.router = _router;
-    this.show = false;
     this.subMenuToggleService = submenuservice;
   }
 
@@ -22,10 +20,9 @@ export class RoutableComponent implements OnInit {
     }
 
     if (this.router.url.startsWith("/outdoor_activities")) {
-      this.subMenuToggleService.setNightlife(false);
+      this.subMenuToggleService.setOutdoors(true);
     } else {
       this.subMenuToggleService.setOutdoors(false);
     }
   }
-
 }

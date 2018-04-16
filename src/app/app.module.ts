@@ -30,6 +30,7 @@ import { WaterActivitiesComponent } from './components/water-activities/water-ac
 import { OutdoorActivitiesComponent } from './components/outdoor-activities/outdoor-activities.component';
 import { HomeComponent } from './components/home/home.component';
 import {SubMenuTogglerService} from './services/sub-menu-toggler.service';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 const appRoutes : Routes = [
 {path:"",component:HomeComponent},
@@ -88,7 +89,8 @@ const appRoutes : Routes = [
     NeighborhoodComponent,
     WaterActivitiesComponent,
     OutdoorActivitiesComponent,
-    HomeComponent
+    HomeComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
