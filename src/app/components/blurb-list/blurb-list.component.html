@@ -1,2 +1,3 @@
 <h1>{{blurbList.title}}</h1>
 <p>{{blurbList.description}}</p>
+<app-blurb *ngFor="let blurb of blurbList.blurbs" [blurb]="blurb"></app-blurb>
