@@ -8,31 +8,31 @@ import { SubMenuTogglerService } from '../../services/sub-menu-toggler.service';
   templateUrl: './nav-bar.component.html'
 })
 export class NavBarComponent implements OnInit {
-  isOutdoors: boolean;
-  isNightlife: boolean;
-  subMenuService: SubMenuTogglerService;
-  nightlifeSubscription: Subscription;
-  outdoorsSubscription: Subscription;
+  isOutdoors: boolean = false;
+  isNightlife: boolean = false;
+  routeSubscription: Subscription;
 
-  constructor(private submenuservice: SubMenuTogglerService) {
-    this.subMenuService = submenuservice;
-    this.isNightlife = false;
-    this.isOutdoors = false;
+  constructor(private subMenuService: SubMenuTogglerService) {
   }
 
   ngOnInit() {
-    this.nightlifeSubscription = this.subMenuService.changeNightlife.subscribe(val => {
-      this.isNightlife = val;
-    });
+    this.routeSubscription = this.subMenuService.changeRoute.subscribe(url => {
+      if (url.startsWith("/nightlife")) {
+        this.isNightlife = true;
+      } else {
+        this.isNightlife = false;
+      }
 
-    this.outdoorsSubscription = this.subMenuService.changeOutdoors.subscribe(val => {
-      this.isOutdoors = val;
+      if (url.startsWith("/outdoor_activities")) {
+        this.isOutdoors = true;
+      } else {
+        this.isOutdoors = false;
+      }
     });
   }
 
   ngOnDestroy() {
     // prevent memory leak when component destroyed
-    this.outdoorsSubscription.unsubscribe();
-    this.nightlifeSubscription.unsubscribe();
+    this.routeSubscription.unsubscribe();
   }
 }
