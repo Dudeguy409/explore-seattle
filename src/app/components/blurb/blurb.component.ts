@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 import { Blurb } from "../../models/blurb";
 
@@ -6,13 +6,9 @@ import { Blurb } from "../../models/blurb";
   selector: 'app-blurb',
   templateUrl: './blurb.component.html'
 })
-export class BlurbComponent implements OnInit {
+export class BlurbComponent {
 
-  constructor(blurb: Blurb) {
-  }
-
-  ngOnInit() {
-  }
+  @Input() blurb:Blurb;
 
 }
 
