@@ -1,4 +1,13 @@
-<h1 *ngIf="isMain">{{blurb.title}}</h1>
-<h3 *ngIf="!isMain">{{blurb.title}}</h3>
-
-<p>{{blurb.description}}</p>
+<h1 *ngIf="blurb.isMain && blurb.titleRouterLink">
+    <a [routerLink]="blurb.titleRouterLink">{{blurb.title}}</a>
+</h1>
+<h1 *ngIf="blurb.isMain && !blurb.titleRouterLink">
+    {{blurb.title}}
+</h1>
+<h3 *ngIf="!blurb.isMain && blurb.titleRouterLink">
+    <a [routerLink]="blurb.titleRouterLink">{{blurb.title}}</a>
+</h3>
+<h3 *ngIf="!blurb.isMain && !blurb.titleRouterLink">
+    {{blurb.title}}
+</h3>
+<p *ngFor="let paragraph of blurb.description" [innerHTML]="paragraph"></p>

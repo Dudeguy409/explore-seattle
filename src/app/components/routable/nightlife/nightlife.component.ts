@@ -2,14 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { SubMenuTogglerService } from '../../../services/sub-menu-toggler.service';
+import { NIGHTLIFE } from "../../../data/nightlife";
+import { BlurbList } from '../../../models/blurb-list';
 
 @Component({
   selector: 'app-nightlife',
-  templateUrl: './nightlife.component.html'
+  template: `<app-blurb-list [blurbList]="blurbList"></app-blurb-list>`
 })
 export class NightlifeComponent {
+  blurbList: BlurbList = NIGHTLIFE;
 
-  constructor(private router: Router, private subMenuToggleService:SubMenuTogglerService) {
+  constructor(private router: Router, private subMenuToggleService: SubMenuTogglerService) {
   }
 
   ngOnInit() {

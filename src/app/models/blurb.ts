@@ -1,6 +1,10 @@
+import { Link } from "./link";
+
 export interface Blurb {
     title: string;
-    isMain: boolean;
-    description: string;
-    photosLinks: string[];
+    description: string[];
+    titleRouterLink?:string;
+    isMain?: boolean;
+    externalLinks?:Link[];
+    seeAlso?:Link[];
 }
