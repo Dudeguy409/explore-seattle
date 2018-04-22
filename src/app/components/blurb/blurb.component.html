@@ -11,6 +11,12 @@
     {{blurb.title}}
 </h3>
 <p *ngFor="let paragraph of blurb.description" [innerHTML]="paragraph"></p>
+<div *ngIf="blurb.seeAlso">
+    <h5>See Also:</h5>
+    <li *ngFor="let link of blurb.seeAlso">
+        <a [routerLink]="link.url">{{link.text}}</a>
+    </li>
+</div>
 <div *ngIf="blurb.externalLinks">
     <h5>External Links:</h5>
     <li *ngFor="let link of blurb.externalLinks">

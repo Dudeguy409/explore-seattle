@@ -2,17 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { SubMenuTogglerService } from '../../../services/sub-menu-toggler.service';
-import { NEIGHBORHOODS } from "../../../data/neighborhoods";
+import { NIGHTCLUBS } from "../../../data/nightclubs";
 import { BlurbList } from '../../../models/blurb-list';
 
 @Component({
-  selector: 'app-neighborhood',
+  selector: 'app-nightclubs',
   template: `<app-blurb-list [blurbList]="blurbList"></app-blurb-list>`
 })
-export class NeighborhoodComponent {
-  blurbList: BlurbList = NEIGHBORHOODS;
+export class NightclubsComponent {
+  blurbList: BlurbList = NIGHTCLUBS;
 
-  constructor(private router: Router, private subMenuToggleService:SubMenuTogglerService) {
+  constructor(private router: Router, private subMenuToggleService: SubMenuTogglerService) {
   }
 
   ngOnInit() {

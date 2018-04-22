@@ -11,7 +11,7 @@ export const SUGARBOMBS: BlurbList = {
         },
         {
             title: "Pie Bar",
-            description: ["Pie Bar is known for its clever dessert cocktail creations, especially its Pie-tinis with pie crust rims.  There is a location in Ballard and Capitol Hill.  And before you ask, YES, they also serve actual pie."]
+            description: ["Pie Bar is known for its clever dessert cocktail creations, especially its Pie-tinis with pie crust rims.  There are locations in Ballard and Capitol Hill.  And before you ask, YES, they also serve actual pie."]
         },
         {
             title: "Le Faux",
