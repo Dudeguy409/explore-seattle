@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { SubMenuTogglerService } from '../../../services/sub-menu-toggler.service';
-import { LIVEMUSIC } from "../../../data/live-music";
+import { LIVE_MUSIC } from "../../../data/live-music";
 import { BlurbList } from '../../../models/blurb-list';
 
 @Component({
@@ -10,11 +10,12 @@ import { BlurbList } from '../../../models/blurb-list';
   template: `<app-blurb-list [blurbList]="blurbList"></app-blurb-list>`
 })
 export class LiveMusicComponent implements OnInit {
-  blurbList: BlurbList = LIVEMUSIC;
+  blurbList: BlurbList = LIVE_MUSIC;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private router: Router, private subMenuToggleService: SubMenuTogglerService) {
   }
 
+  ngOnInit() {
+    this.subMenuToggleService.setRoute(this.router.url);
+  }
 }

@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './components/routable/page-not-found/page-not-found.component';
-import { AboutMeComponent } from './components/routable/about-me/about-me.component';
 import { SouvenirIdeasComponent } from './components/routable/souvenir-ideas/souvenir-ideas.component';
 import { MuseumsComponent } from './components/routable/museums/museums.component';
 import { RestaurantsComponent } from './components/routable/restaurants/restaurants.component';
@@ -12,22 +11,18 @@ import { SeasonalActivitiesComponent } from './components/routable/seasonal-acti
 import { LeavenworthComponent } from './components/routable/leavenworth/leavenworth.component';
 import { WoodinvilleComponent } from './components/routable/woodinville/woodinville.component';
 import { CityFromAboveComponent } from './components/routable/city-from-above/city-from-above.component';
-import { SkiingComponent } from './components/routable/skiing/skiing.component';
+import { SkiingAndSnowboardingComponent } from './components/routable/skiing-and-snowboarding/skiing-and-snowboarding.component';
 import { CityParksComponent } from './components/routable/city-parks/city-parks.component';
-import { HikingComponent } from './components/routable/hiking/hiking.component';
 import { GamesAndBarcadesComponent } from './components/routable/games-and-barcades/games-and-barcades.component';
 import { FirstTripComponent } from './components/routable/first-trip/first-trip.component';
 import { CitySightsComponent } from './components/routable/city-sights/city-sights.component';
 import { NightlifeComponent } from './components/routable/nightlife/nightlife.component';
-import { SugarBombComponent } from './components/routable/sugar-bomb/sugar-bomb.component';
+import { SugarBombsComponent } from './components/routable/sugar-bombs/sugar-bombs.component';
 import { GermanBeerComponent } from './components/routable/german-beer/german-beer.component';
 import { KaraokeComponent } from './components/routable/karaoke/karaoke.component';
 import { CraftBreweriesComponent } from './components/routable/craft-breweries/craft-breweries.component';
 import { CraftCocktailsComponent } from './components/routable/craft-cocktails/craft-cocktails.component';
-import { IrishPubComponent } from './components/routable/irish-pub/irish-pub.component';
-import { NeighborhoodComponent } from './components/routable/neighborhood/neighborhood.component';
 import { WaterActivitiesComponent } from './components/routable/water-activities/water-activities.component';
-import { OutdoorActivitiesComponent } from './components/routable/outdoor-activities/outdoor-activities.component';
 import { HomeComponent } from './components/routable/home/home.component';
 import { SubMenuTogglerService } from './services/sub-menu-toggler.service';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
@@ -39,35 +34,50 @@ import { BlurbListComponent } from './components/blurb-list/blurb-list.component
 import { LiveMusicComponent } from './components/routable/live-music/live-music.component';
 import { NightclubsComponent } from './components/routable/nightclubs/nightclubs.component';
 import { SafePipe } from './pipes/safe.pipe';
+import { TransportationComponent } from './components/routable/transportation/transportation.component';
+import { BallroomDancingComponent } from './components/routable/ballroom-dancing/ballroom-dancing.component';
+import { WrestlingComponent } from './components/routable/wrestling/wrestling.component';
+import { OlympicPeninsulaComponent } from './components/routable/olympic-peninsula/olympic-peninsula.component';
+import { DeceptionPassComponent } from './components/routable/deception-pass/deception-pass.component';
+import { CascadesComponent } from './components/routable/cascades/cascades.component';
+import { OutsideOfTheCityComponent } from './components/routable/outside-of-the-city/outside-of-the-city.component';
+import { AboutTheAuthorComponent } from './components/routable/about-the-author/about-the-author.component';
+import { IrishPubsComponent } from './components/routable/irish-pubs/irish-pubs.component';
+import { BestNeighborhoodsComponent } from './components/routable/best-neighborhoods/best-neighborhoods.component';
 
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
-  { path: "first_trip_top_tips", component: FirstTripComponent },
+  { path: "first_trip", component: FirstTripComponent },
   { path: "city_sights", component: CitySightsComponent },
+  { path: "city_sights/city_parks", component: CityParksComponent },
+  { path: "city_sights/water_activities", component: WaterActivitiesComponent },
+  { path: "city_sights/city_from_above", component: CityFromAboveComponent },
+  { path: "city_sights/museums", component: MuseumsComponent },
   { path: "nightlife", component: NightlifeComponent },
-  { path: "nightlife/sugar_bombs", component: SugarBombComponent },
-  { path: "nightlife/german_beer", component: GermanBeerComponent },
-  { path: "nightlife/karaoke", component: KaraokeComponent },
+  { path: "nightlife/best_neighborhoods", component: BestNeighborhoodsComponent },
   { path: "nightlife/craft_breweries", component: CraftBreweriesComponent },
   { path: "nightlife/craft_coctails", component: CraftCocktailsComponent },
-  { path: "nightlife/irish_pubs", component: IrishPubComponent },
-  { path: "nightlife/neighborhoods", component: NeighborhoodComponent },
-  { path: "nightlife/games_and_barcades", component: GamesAndBarcadesComponent },
-  { path: "nightlife/live_music", component: LiveMusicComponent },
+  { path: "nightlife/sugar_bombs", component: SugarBombsComponent },
   { path: "nightlife/nightclubs", component: NightclubsComponent },
-  { path: "outdoor_activities", component: OutdoorActivitiesComponent },
-  { path: "outdoor_activities/water_activities", component: WaterActivitiesComponent },
-  { path: "outdoor_activities/hiking", component: HikingComponent },
-  { path: "outdoor_activities/city_parks", component: CityParksComponent },
-  { path: "outdoor_activities/skiing", component: SkiingComponent },
-  { path: "city_from_above", component: CityFromAboveComponent },
-  { path: "woodinville_wine_tasting", component: WoodinvilleComponent },
-  { path: "leavenworth", component: LeavenworthComponent },
+  { path: "nightlife/live_music", component: LiveMusicComponent },
+  { path: "nightlife/games_and_barcades", component: GamesAndBarcadesComponent },
+  { path: "nightlife/karaoke", component: KaraokeComponent },
+  { path: "nightlife/ballroom_dancing", component: BallroomDancingComponent },
+  { path: "nightlife/german_beer", component: GermanBeerComponent },
+  { path: "nightlife/irish_pubs", component: IrishPubsComponent },
+  { path: "nightlife/wrestling", component: WrestlingComponent },
+  { path: "outside_of_the_city", component: OutsideOfTheCityComponent },
+  { path: "outside_of_the_city/deception_pass", component: DeceptionPassComponent },
+  { path: "outside_of_the_city/olympic_peninsula", component: OlympicPeninsulaComponent},
+  { path: "outside_of_the_city/cascades", component: CascadesComponent },
+  { path: "outside_of_the_city/skiing_and_snowboarding", component: SkiingAndSnowboardingComponent },
+  { path: "outside_of_the_city/woodinville_wine_tasting", component: WoodinvilleComponent },
+  { path: "outside_of_the_city/leavenworth", component: LeavenworthComponent },
   { path: "seasonal_activities", component: SeasonalActivitiesComponent },
+  { path: "transportation", component: TransportationComponent },
   { path: "restaurants", component: RestaurantsComponent },
-  { path: "museums", component: MuseumsComponent },
   { path: "souvenir_ideas", component: SouvenirIdeasComponent },
-  { path: "about_the_author", component: AboutMeComponent },
+  { path: "about_the_author", component: AboutTheAuthorComponent },
   { path: "contact", component: ContactMeComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
@@ -76,7 +86,6 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    AboutMeComponent,
     SouvenirIdeasComponent,
     MuseumsComponent,
     RestaurantsComponent,
@@ -84,22 +93,20 @@ const appRoutes: Routes = [
     LeavenworthComponent,
     WoodinvilleComponent,
     CityFromAboveComponent,
-    SkiingComponent,
+    SkiingAndSnowboardingComponent,
     CityParksComponent,
-    HikingComponent,
     GamesAndBarcadesComponent,
     FirstTripComponent,
     CitySightsComponent,
     NightlifeComponent,
-    SugarBombComponent,
+    SugarBombsComponent,
     GermanBeerComponent,
     KaraokeComponent,
     CraftBreweriesComponent,
     CraftCocktailsComponent,
-    IrishPubComponent,
-    NeighborhoodComponent,
+    IrishPubsComponent,
+    BestNeighborhoodsComponent,
     WaterActivitiesComponent,
-    OutdoorActivitiesComponent,
     HomeComponent,
     NavBarComponent,
     ContactMeComponent,
@@ -109,7 +116,17 @@ const appRoutes: Routes = [
     BlurbListComponent,
     LiveMusicComponent,
     NightclubsComponent,
-    SafePipe
+    SafePipe,
+    TransportationComponent,
+    BallroomDancingComponent,
+    WrestlingComponent,
+    OlympicPeninsulaComponent,
+    DeceptionPassComponent,
+    CascadesComponent,
+    OutsideOfTheCityComponent,
+    AboutTheAuthorComponent,
+    IrishPubsComponent,
+    BestNeighborhoodsComponent
   ],
   imports: [
     BrowserModule,

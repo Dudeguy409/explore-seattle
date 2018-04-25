@@ -7,9 +7,9 @@ import { SubMenuTogglerService } from '../../../services/sub-menu-toggler.servic
   selector: 'app-home',
   templateUrl: './home.component.html'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
-  constructor(private router: Router, private subMenuToggleService:SubMenuTogglerService) {
+  constructor(private router: Router, private subMenuToggleService: SubMenuTogglerService) {
   }
 
   ngOnInit() {

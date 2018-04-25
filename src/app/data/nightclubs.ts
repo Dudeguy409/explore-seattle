@@ -36,6 +36,10 @@ export const NIGHTCLUBS: BlurbList = {
         {
             title: "Grimm's/Butteryfly Lounge",
             description: [""]
+        },
+        {
+            title: "Ozzie's",
+            description: [""]
         }
     ]
 }

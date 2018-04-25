@@ -7,9 +7,9 @@ import { SubMenuTogglerService } from '../../../services/sub-menu-toggler.servic
   selector: 'app-contact-me',
   templateUrl: './contact-me.component.html'
 })
-export class ContactMeComponent {
+export class ContactMeComponent implements OnInit {
 
-  constructor(private router: Router, private subMenuToggleService:SubMenuTogglerService) {
+  constructor(private router: Router, private subMenuToggleService: SubMenuTogglerService) {
   }
 
   ngOnInit() {

@@ -44,14 +44,6 @@ export const NIGHTLIFE: BlurbList = {
             title: "Irish Pubs & Co",
             titleRouterLink: "/nightlife/irish_pubs",
             description: ["If you're in the mood for an Irish pub, Seattle has you covered!"]
-        },
-        {
-            title: "Century Ballroom",
-            description: ["Seattle has a pretty notable dancing scene, and Century Ballroom is the focal point of it.  Every night, there is a free half hour beginner lesson followed by a two hour social ($9).  The dance socials often include spectacular live music.  Century Ballroom is in a beautiful historic buildings located in the heart of Capitol Hill.  To further add to its charm, it has a prohibition-themed bar with affordable drinks.  If you would rather attend a different dance social, there are plenty of options:  Salsa N Seattle, Salsa Con Todos, Eastside Stomp, and UW, to name a few."]
-        },
-        {
-            title: "321-Battle Wrestling",
-            description: ["Every few weeks, a bunch of grown men dress up in spandex outfits, yell at each other, encourage an audience to yell at each other, and pretend to fight each other.  It is quirkier, sillier, and more entertaining than it sounds.  It has more in common with Inglorious Basterds than UFC.  If you are one of the poor few who still thought that wrestling was real fighting, I'm sorry to break the news."]
         }
     ]
 }

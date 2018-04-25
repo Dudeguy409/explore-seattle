@@ -1,7 +1,7 @@
 
 import { BlurbList } from "../models/blurb-list";
 
-export const SUGARBOMBS: BlurbList = {
+export const SUGAR_BOMBS: BlurbList = {
     title: "Sugar Bombs",
     description: ["Seattle is home to a surprising number of bars that specialize in sugary cocktails.  Be sure to check them out!"],
     blurbs: [

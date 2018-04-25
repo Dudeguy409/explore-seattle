@@ -2,14 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { SubMenuTogglerService } from '../../../services/sub-menu-toggler.service';
+import { PAGE_NOT_FOUND } from "../../../data/page-not-found";
+import { Blurb } from '../../../models/blurb';
 
 @Component({
   selector: 'app-page-not-found',
-  templateUrl: './page-not-found.component.html'
+  template: `<app-blurb [blurb]="blurb"></app-blurb>`
 })
-export class PageNotFoundComponent {
+export class PageNotFoundComponent implements OnInit {
+  blurb: Blurb = PAGE_NOT_FOUND;
 
-  constructor(private router: Router, private subMenuToggleService:SubMenuTogglerService) {
+  constructor(private router: Router, private subMenuToggleService: SubMenuTogglerService) {
   }
 
   ngOnInit() {

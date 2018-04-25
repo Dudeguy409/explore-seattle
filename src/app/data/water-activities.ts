@@ -1,7 +1,7 @@
 
 import { BlurbList } from "../models/blurb-list";
 
-export const WATERACTIVITIES: BlurbList = {
+export const WATER_ACTIVITIES: BlurbList = {
     title: "Water Activities",
     description: ["During the warmer months from mid-April through September, "],
     blurbs: [

@@ -9,7 +9,7 @@ import { BlurbList } from '../../../models/blurb-list';
   selector: 'app-museums',
   template: `<app-blurb-list [blurbList]="blurbList"></app-blurb-list>`
 })
-export class MuseumsComponent {
+export class MuseumsComponent implements OnInit {
   blurbList: BlurbList = MUSEUMS;
 
   constructor(private router: Router, private subMenuToggleService: SubMenuTogglerService) {

@@ -1,16 +1,30 @@
 <nav class="navbar navbar-default navbar-fixed-side">
   <ul class="nav navbar-nav">
     <li>
-      <a routerLink="/first_trip_top_tips">Top Things To Do On Your First Trip</a>
+      <a routerLink="/first_trip">Top Things To Do On Your First Trip</a>
     </li>
     <li>
       <a routerLink="/city_sights">City Sights</a>
+      <ul class="nav navbar-nav" *ngIf="isCitySights">
+        <li>&emsp;
+          <a routerLink="/city_sights/city_parks">City Parks</a>
+        </li>
+        <li>&emsp;
+          <a routerLink="/city_sights/water_activities">Water Activities</a>
+        </li>
+        <li>&emsp;
+          <a routerLink="/city_sights/city_from_above">See the City from Above</a>
+        </li>
+        <li>&emsp;
+          <a routerLink="/city_sights/museums">Museums</a>
+        </li>
+      </ul>
     </li>
     <li>
       <a routerLink="/nightlife">Nightlife</a>
       <ul class="nav navbar-nav" *ngIf="isNightlife">
         <li>&emsp;
-          <a routerLink="/nightlife/neighborhoods">Best Neighborhoods</a>
+          <a routerLink="/nightlife/best_neighborhoods">Best Neighborhoods</a>
         </li>
         <li>&emsp;
           <a routerLink="/nightlife/craft_breweries">Craft Breweries</a>
@@ -31,6 +45,9 @@
           <a routerLink="/nightlife/games_and_barcades">Games &amp; Barcades </a>
         </li>
         <li>&emsp;
+          <a routerLink="/nightlife/ballroom_dancing">Swing, Salsa, etc.</a>
+        </li>
+        <li>&emsp;
           <a routerLink="/nightlife/karaoke">Karaoke</a>
         </li>
         <li>&emsp;
@@ -39,42 +56,43 @@
         <li>&emsp;
           <a routerLink="/nightlife/irish_pubs">Irish Pubs &amp; Co</a>
         </li>
-      </ul>
-    </li>
-    <li>
-      <a routerLink="/outdoor_activities">Outdoor Activities</a>
-      <ul class="nav navbar-nav" *ngIf="isOutdoors">
         <li>&emsp;
-          <a routerLink="/outdoor_activities/water_activities">Water Activities</a>
-        </li>
-        <li>&emsp;
-          <a routerLink="/outdoor_activities/hiking">Hiking</a>
-        </li>
-        <li>&emsp;
-          <a routerLink="/outdoor_activities/city_parks">City Parks</a>
-        </li>
-        <li>&emsp;
-          <a routerLink="/outdoor_activities/skiing">Skiing</a>
+          <a routerLink="/nightlife/wrestling">321-Battle! Wrestling</a>
         </li>
       </ul>
     </li>
     <li>
-      <a routerLink="/city_from_above">See the City from Above</a>
-    </li>
-    <li>
-      <a routerLink="/woodinville_wine_tasting">Wine Tasting in Woodinville</a>
-    </li>
-    <li>
-      <a routerLink="/leavenworth">Leavenworth : A German Village</a>
+      <a routerLink="/outside_of_the_city">Outside Of The City</a>
+      <ul class="nav navbar-nav" *ngIf="isOutsideCity">
+
+        <li>&emsp;
+          <a routerLink="/outside_of_the_city/deception_pass">Deception Pass</a>
+        </li>
+        <li>&emsp;
+          <a routerLink="/outside_of_the_city/olympic_peninsula">Olympic Peninsula</a>
+        </li>
+        <li>&emsp;
+          <a routerLink="/outside_of_the_city/cascades">Cascade Mountains</a>
+        </li>
+        <li>&emsp;
+          <a routerLink="/outside_of_the_city/skiing_and_snowboarding">Skiing &amp; Snowboarding</a>
+        </li>
+        <li>&emsp;
+          <a routerLink="/outside_of_the_city/woodinville_wine_tasting">Wine Tasting in Woodinville</a>
+        </li>
+        <li>&emsp;
+          <a routerLink="/outside_of_the_city/leavenworth">Leavenworth : A Cute German Village</a>
+        </li>
+      </ul>
     </li>
     <li>
       <a routerLink="/seasonal_activities">Seasonal Activities</a>
     </li>
     <li>
-      <a routerLink="/restaurants">Restaurants</a>
+      <a routerLink="/transportation">Transportation</a>
     </li>
     <li>
-      <a routerLink="/museums">Museums</a>
+      <a routerLink="/restaurants">Restaurants</a>
     </li>
     <li>
       <a routerLink="/souvenir_ideas">Souvenir Ideas</a>

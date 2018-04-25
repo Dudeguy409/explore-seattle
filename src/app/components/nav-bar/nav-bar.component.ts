@@ -8,8 +8,9 @@ import { SubMenuTogglerService } from '../../services/sub-menu-toggler.service';
   templateUrl: './nav-bar.component.html'
 })
 export class NavBarComponent implements OnInit {
-  isOutdoors: boolean = false;
+  isOutsideCity: boolean = false;
   isNightlife: boolean = false;
+  isCitySights: boolean = false;
   routeSubscription: Subscription;
 
   constructor(private subMenuService: SubMenuTogglerService) {
@@ -23,10 +24,16 @@ export class NavBarComponent implements OnInit {
         this.isNightlife = false;
       }
 
-      if (url.startsWith("/outdoor_activities")) {
-        this.isOutdoors = true;
+      if (url.startsWith("/outside_of_the_city")) {
+        this.isOutsideCity = true;
       } else {
-        this.isOutdoors = false;
+        this.isOutsideCity = false;
+      }
+
+      if (url.startsWith("/city_sights")) {
+        this.isCitySights = true;
+      } else {
+        this.isCitySights = false;
       }
     });
   }

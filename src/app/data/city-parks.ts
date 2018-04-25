@@ -1,7 +1,7 @@
 
 import { BlurbList } from "../models/blurb-list";
 
-export const CITYPARKS: BlurbList = {
+export const CITY_PARKS: BlurbList = {
     title: "City parks",
     description: ["  If you don't have time for a day hike to the mountains (or even if you do), you may want to check out a couple of the parks!"],
     blurbs: [

@@ -1,7 +1,7 @@
 
 import { BlurbList } from "../models/blurb-list";
 
-export const GAMESANDBARCADES: BlurbList = {
+export const GAMES_AND_BARCADES: BlurbList = {
     title: "Games & Barcades",
     description: ["Seattle has lotsa barcades and games!"],
     blurbs: [

@@ -1,7 +1,7 @@
 
 import { BlurbList } from "../models/blurb-list";
 
-export const LIVEMUSIC: BlurbList = {
+export const LIVE_MUSIC: BlurbList = {
     title: "Live Music Venues",
     description: ["Seattle has a variety of concert venues and bars with live music."],
     blurbs: [

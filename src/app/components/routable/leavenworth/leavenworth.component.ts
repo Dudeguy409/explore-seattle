@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { SubMenuTogglerService } from '../../../services/sub-menu-toggler.service';
-import {LEAVENWORTH} from "../../../data/leavenworth";
+import { LEAVENWORTH } from "../../../data/leavenworth";
 import { Blurb } from '../../../models/blurb';
 
 @Component({
   selector: 'app-leavenworth',
-  template:`<app-blurb [blurb]="blurb"></app-blurb>`
+  template: `<app-blurb [blurb]="blurb"></app-blurb>`
 })
-export class LeavenworthComponent {
-  blurb:Blurb=LEAVENWORTH;
+export class LeavenworthComponent implements OnInit {
+  blurb: Blurb = LEAVENWORTH;
 
   constructor(private router: Router, private subMenuToggleService: SubMenuTogglerService) {
   }

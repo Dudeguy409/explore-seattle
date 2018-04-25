@@ -2,14 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { SubMenuTogglerService } from '../../../services/sub-menu-toggler.service';
+import { FIRST_TRIP } from "../../../data/first-trip";
+import { BlurbList } from '../../../models/blurb-list';
 
 @Component({
   selector: 'app-first-trip',
-  templateUrl: './first-trip.component.html'
+  template: `<app-blurb-list [blurbList]="blurbList"></app-blurb-list>`
 })
-export class FirstTripComponent {
+export class FirstTripComponent implements OnInit {
+  blurbList: BlurbList = FIRST_TRIP;
 
-  constructor(private router: Router, private subMenuToggleService:SubMenuTogglerService) {
+  constructor(private router: Router, private subMenuToggleService: SubMenuTogglerService) {
   }
 
   ngOnInit() {
