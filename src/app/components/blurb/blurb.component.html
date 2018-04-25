@@ -1,0 +1,25 @@
+<h1 *ngIf="blurb.isMain && blurb.titleRouterLink">
+    <a [routerLink]="blurb.titleRouterLink">{{blurb.title}}</a>
+</h1>
+<h1 *ngIf="blurb.isMain && !blurb.titleRouterLink">
+    {{blurb.title}}
+</h1>
+<h3 *ngIf="!blurb.isMain && blurb.titleRouterLink">
+    <a [routerLink]="blurb.titleRouterLink">{{blurb.title}}</a>
+</h3>
+<h3 *ngIf="!blurb.isMain && !blurb.titleRouterLink">
+    {{blurb.title}}
+</h3>
+<p *ngFor="let paragraph of blurb.description" [innerHTML]="paragraph"></p>
+<div *ngIf="blurb.seeAlso">
+    <h5>See Also:</h5>
+    <li *ngFor="let link of blurb.seeAlso">
+        <a [routerLink]="link.url">{{link.text}}</a>
+    </li>
+</div>
+<div *ngIf="blurb.externalLinks">
+    <h5>External Links:</h5>
+    <li *ngFor="let link of blurb.externalLinks">
+        <a href="{{link.url}}">{{link.text}}</a>
+    </li>
+</div>

@@ -1,0 +1,4 @@
+<h1>{{blurbList.title}}</h1>
+<p *ngFor="let paragraph of blurbList.description" [innerHTML]="paragraph"></p>
+<app-blurb *ngFor="let blurb of blurbList.blurbs" [blurb]="blurb"></app-blurb>
+<iframe *ngIf="blurbList.map_url" [src]="blurbList.map_url | safe" width="640" height="480"></iframe>
