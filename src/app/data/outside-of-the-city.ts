@@ -1,33 +1,33 @@
 
-import { BlurbList } from "../models/blurb-list";
+import { LinkGrid } from "../models/link-grid";
 
-export const OUTSIDE_OF_THE_CITY: BlurbList = {
+export const OUTSIDE_OF_THE_CITY: LinkGrid = {
     title: "Outside of The City",
-    description: [""],
-    blurbs: [
+    description: ["Check out these activities outside of the city!"],
+    items: [
         {
             title: "Deception Pass",
-            description: [""]
-        },
-        {
-            title: "Olympic Peninsula",
-            description: [""]
+            link_url:"/outside_of_the_city/deception_pass"
         },
         {
             title: "Cascades",
-            description: [""]
-        },
-        {
-            title: "Skiing & Snowboarding",
-            description: [""]
-        },
-        {
-            title: "Leavenworth: A Cute German Village",
-            description: [""]
+            link_url:"/outside_of_the_city/cascades"
         },
         {
             title: "Wine Tasting in Woodinville",
-            description: [""]
+            link_url:"/outside_of_the_city/woodinville_wine_tasting"
+        },
+        {
+            title: "Olympic Peninsula",
+            link_url:"/outside_of_the_city/olympic_peninsula"
+        },
+        {
+            title: "Skiing & Snowboarding",
+            link_url:"/outside_of_the_city/skiing_and_snowboarding"
+        },
+        {
+            title: "Leavenworth: A Cute German Village",
+            link_url:"/outside_of_the_city/leavenworth"
         }
     ]
 }

@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { SubMenuTogglerService } from '../../../services/sub-menu-toggler.service';
-import { NIGHTLIFE } from "../../../data/nightlife";
-import { LinkGrid } from '../../../models/link-grid';
+import { UNDERGROUND_TOUR } from "../../../data/underground-tour";
+import { Blurb } from '../../../models/blurb';
 
 @Component({
-  selector: 'app-nightlife',
-  template: `<app-link-grid [linkGrid]="linkGrid"></app-link-grid>`
+  selector: 'app-underground-tour',
+  template: `<app-blurb [blurb]="blurb"></app-blurb>`
 })
-export class NightlifeComponent implements OnInit {
-  linkGrid: LinkGrid = NIGHTLIFE;
+export class UndergroundTourComponent implements OnInit {
+  blurb: Blurb = UNDERGROUND_TOUR;
 
   constructor(private router: Router, private subMenuToggleService: SubMenuTogglerService) {
   }
@@ -18,5 +18,4 @@ export class NightlifeComponent implements OnInit {
   ngOnInit() {
     this.subMenuToggleService.setRoute(this.router.url);
   }
-
 }

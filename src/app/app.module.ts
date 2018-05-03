@@ -44,6 +44,12 @@ import { OutsideOfTheCityComponent } from './components/routable/outside-of-the-
 import { AboutTheAuthorComponent } from './components/routable/about-the-author/about-the-author.component';
 import { IrishPubsComponent } from './components/routable/irish-pubs/irish-pubs.component';
 import { BestNeighborhoodsComponent } from './components/routable/best-neighborhoods/best-neighborhoods.component';
+import { FremontComponent } from './components/routable/fremont/fremont.component';
+import { GeorgetownComponent } from './components/routable/georgetown/georgetown.component';
+import { PikePlaceMarketComponent } from './components/routable/pike-place-market/pike-place-market.component';
+import { UndergroundTourComponent } from './components/routable/underground-tour/underground-tour.component';
+import { InternationalDistrictComponent } from './components/routable/international-district/international-district.component';
+import { LinkGridComponent } from './components/link-grid/link-grid.component';
 
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
@@ -53,6 +59,11 @@ const appRoutes: Routes = [
   { path: "city_sights/water_activities", component: WaterActivitiesComponent },
   { path: "city_sights/city_from_above", component: CityFromAboveComponent },
   { path: "city_sights/museums", component: MuseumsComponent },
+  { path: "city_sights/georgetown", component: GeorgetownComponent },
+  { path: "city_sights/fremont", component: FremontComponent },
+  { path: "city_sights/chinatown_international_district", component: InternationalDistrictComponent },
+  { path: "city_sights/pike_place_market", component: PikePlaceMarketComponent },
+  { path: "city_sights/underground_tour", component: UndergroundTourComponent },
   { path: "nightlife", component: NightlifeComponent },
   { path: "nightlife/best_neighborhoods", component: BestNeighborhoodsComponent },
   { path: "nightlife/craft_breweries", component: CraftBreweriesComponent },
@@ -68,7 +79,7 @@ const appRoutes: Routes = [
   { path: "nightlife/wrestling", component: WrestlingComponent },
   { path: "outside_of_the_city", component: OutsideOfTheCityComponent },
   { path: "outside_of_the_city/deception_pass", component: DeceptionPassComponent },
-  { path: "outside_of_the_city/olympic_peninsula", component: OlympicPeninsulaComponent},
+  { path: "outside_of_the_city/olympic_peninsula", component: OlympicPeninsulaComponent },
   { path: "outside_of_the_city/cascades", component: CascadesComponent },
   { path: "outside_of_the_city/skiing_and_snowboarding", component: SkiingAndSnowboardingComponent },
   { path: "outside_of_the_city/woodinville_wine_tasting", component: WoodinvilleComponent },
@@ -126,7 +137,13 @@ const appRoutes: Routes = [
     OutsideOfTheCityComponent,
     AboutTheAuthorComponent,
     IrishPubsComponent,
-    BestNeighborhoodsComponent
+    BestNeighborhoodsComponent,
+    FremontComponent,
+    GeorgetownComponent,
+    PikePlaceMarketComponent,
+    UndergroundTourComponent,
+    InternationalDistrictComponent,
+    LinkGridComponent
   ],
   imports: [
     BrowserModule,

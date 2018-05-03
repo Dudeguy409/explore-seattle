@@ -1,4 +1,3 @@
-
 import { Blurb } from "./blurb";
 
 export interface BlurbList {
