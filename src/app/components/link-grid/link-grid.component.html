@@ -1,0 +1,6 @@
+<h1>{{linkGrid.title}}</h1>
+<p *ngFor="let paragraph of linkGrid.description" [innerHTML]="paragraph"></p>
+<a *ngFor="let item of linkGrid.items" [routerLink]="item.link_url">
+  <h3>{{item.title}}</h3>
+  <p>{{item.description}}</p>
+</a>

@@ -29,5 +29,13 @@ export const MUSEUMS: BlurbList = {
             title: "Nordic Museum",
             description: ["Seattle historically had a lot of Scandinavian immigrants.  The Nordic Museum in Ballard showcases that.  Naturally, that entails a few lego dioramas!  General admission is $15."]
         },
+        {
+            title: "Chihuly Garden and Glass",
+            description: [""]
+        },
+        {
+            title: "Boeing Factory Tour - see also museum of flight",
+            description: [""]
+        }
     ]
 }

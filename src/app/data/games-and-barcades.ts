@@ -3,7 +3,7 @@ import { BlurbList } from "../models/blurb-list";
 
 export const GAMES_AND_BARCADES: BlurbList = {
     title: "Games & Barcades",
-    description: ["Seattle has lotsa barcades and games!"],
+    description: ["Seattle has lotsa barcades and games! Barcades are all the rage in Seattle!  Be a part of the action!"],
     blurbs: [
         {
             title: "Jupiter",
@@ -29,9 +29,9 @@ export const GAMES_AND_BARCADES: BlurbList = {
             title: "Bowling",
             description: ["Within the city of Seattle, there are only two options for bowling: Garage (a bar) and University of Washington.", "Garage is in Capitol Hill and has a much better vibe, but it's insanely busy on weekends.", "The UW bowling alley is inside the Husky Union Building, on the UW campus in the UDistrict.  Not to much surprise, drinking isn't allowed."]
         },
-        {
+        {        
             title: "Seattle Cider",
-            description: ["Shuffleboard and board games.  Can get crowded though."]
+            description: ["Shuffleboard and board games.  Can get crowded, though."]
         },
         {
             title: "Shorty's",
@@ -48,6 +48,10 @@ export const GAMES_AND_BARCADES: BlurbList = {
         {
             title: "Add-a-bar",
             description: ["Barcade in Fremont"]
-        }
+        },
+        {
+            title: "Whirlyball",
+            description: ["Whirlyball is a quirky game that is basically a mix of bumper cars and lacrosse.  It is located 25 minutes north of Downtown Seattle.  Although it is open late every night, it might not qualify strictly as nightlife since it is open all day."]
+          }
     ]
 }

@@ -3,14 +3,14 @@ import { Router } from '@angular/router';
 
 import { SubMenuTogglerService } from '../../../services/sub-menu-toggler.service';
 import { CITY_SIGHTS } from "../../../data/city-sights";
-import { BlurbList } from '../../../models/blurb-list';
+import { LinkGrid } from '../../../models/link-grid';
 
 @Component({
   selector: 'app-city-sights',
-  template: `<app-blurb-list [blurbList]="blurbList"></app-blurb-list>`
+  template: `<app-link-grid [linkGrid]="linkGrid"></app-link-grid>`
 })
 export class CitySightsComponent implements OnInit {
-  blurbList: BlurbList = CITY_SIGHTS;
+  linkGrid: LinkGrid = CITY_SIGHTS;
 
   constructor(private router: Router, private subMenuToggleService: SubMenuTogglerService) {
   }

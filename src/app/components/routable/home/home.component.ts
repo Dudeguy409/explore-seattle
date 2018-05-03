@@ -2,12 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { SubMenuTogglerService } from '../../../services/sub-menu-toggler.service';
+import { HOME } from "../../../data/home";
+import { LinkGrid } from '../../../models/link-grid';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html'
+  template: `<app-link-grid [linkGrid]="linkGrid"></app-link-grid>`
 })
 export class HomeComponent implements OnInit {
+  linkGrid: LinkGrid = HOME;
 
   constructor(private router: Router, private subMenuToggleService: SubMenuTogglerService) {
   }

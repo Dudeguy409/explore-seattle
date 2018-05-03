@@ -1,49 +1,54 @@
 
-import { BlurbList } from "../models/blurb-list";
+import { LinkGrid } from "../models/link-grid";
 
-export const CITY_SIGHTS: BlurbList = {
+export const CITY_SIGHTS: LinkGrid = {
   title: "City Sights",
-  description: [""],
-  blurbs: [
+  description: ["Check out these things to do within the city limits of Seattle!"],
+  items: [
     {
       title: "Pike Place Market",
-      description: ["<ul><li>Gum Wall</li><li>Original Starbucks Location</li><li>Fish Market</li></ul>"]
+      link_url: "/city_sights/pike_place_market",
+      description: ""
     },
     {
-      title: "Underground Tour",
-      description: [""]
+      title: "City Parks",
+      link_url: "/city_sights/city_parks",
+      description: ""
     },
     {
-      title: "Chihuly Garden and Glass",
-      description: [""]
+      title: "See The City From Above",
+      link_url: "/city_sights/city_from_above",
+      description: ""
     },
     {
-      title: "Georgetown",
-      description: ["<ul><li>Machine House Brewery</li><li>Square Knot Diner (Ed Sheeran's “Shape of You” restaurant)</li><li> Flip Flip, Ding Ding! Barcade</li><li>Georgetown Brewing Co</li><li>Other Barcade</li></ul>"]
+      title: "Museums",
+      link_url: "/city_sights/museums",
+      description: ""
     },
     {
-      title: "WhirlyBall",
-      description: [""]
-    },
-    {
-      title: "Boeing Factory Tour - see also museum of flight",
-      description: [""]
+      title: "Water Activities",
+      link_url: "/city_sights/water_activities",
+      description: ""
     },
     {
       title: "Fremont",
-      description: ["<ul><li>Fremont Canal Park</li><li>The Troll Statue</li><li>Lenin Statue</li><li>Fremont DrawBridge</li></ul>"]
+      link_url: "/city_sights/fremont",
+      description: ""
     },
     {
-      title: "Starbucks Reserve Roastery & Tasting Room",
-      description: [""]
+      title: "Underground Tour",
+      link_url: "/city_sights/underground_tour",
+      description: ""
     },
     {
-      title: "International District (Chinatown)",
-      description: [""]
+      title: "Chinatown - International District",
+      link_url: "/city_sights/chinatown_international_district",
+      description: ""
     },
     {
-      title: "Seattle Central Library",
-      description: [""]
-    },
+      title: "Georgetown",
+      link_url: "/city_sights/georgetown",
+      description: ""
+    }
   ]
 }

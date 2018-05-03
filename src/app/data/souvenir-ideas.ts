@@ -21,5 +21,9 @@ export const SOUVENIR_IDEAS: BlurbList = {
             title: "Northwest Tribal Art",
             description: [""]
         },
+        {
+            title: "Starbucks Reserve Roastery & Tasting Room",
+            description: [""]
+        }
     ]
 }

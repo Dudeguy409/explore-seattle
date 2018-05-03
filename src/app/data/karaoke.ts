@@ -3,7 +3,7 @@ import { BlurbList } from "../models/blurb-list";
 
 export const KARAOKE: BlurbList = {
     title: "Karaoke",
-    description: [""],
+    description: ["Nothing is more relaxing after a long week of work than voluntarily making a fool out of yourself in front of a large group of strangers!"],
     blurbs: [
         {
             title: "Baranof",

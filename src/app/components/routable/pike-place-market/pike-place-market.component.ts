@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { SubMenuTogglerService } from '../../../services/sub-menu-toggler.service';
-import { NIGHTLIFE } from "../../../data/nightlife";
-import { LinkGrid } from '../../../models/link-grid';
+import { PIKE_PLACE_MARKET } from "../../../data/pike-place-market";
+import { Blurb } from '../../../models/blurb';
 
 @Component({
-  selector: 'app-nightlife',
-  template: `<app-link-grid [linkGrid]="linkGrid"></app-link-grid>`
+  selector: 'app-pike-place-market',
+  template: `<app-blurb [blurb]="blurb"></app-blurb>`
 })
-export class NightlifeComponent implements OnInit {
-  linkGrid: LinkGrid = NIGHTLIFE;
+export class PikePlaceMarketComponent implements OnInit {
+  blurb: Blurb = PIKE_PLACE_MARKET;
 
   constructor(private router: Router, private subMenuToggleService: SubMenuTogglerService) {
   }
@@ -18,5 +18,4 @@ export class NightlifeComponent implements OnInit {
   ngOnInit() {
     this.subMenuToggleService.setRoute(this.router.url);
   }
-
 }
